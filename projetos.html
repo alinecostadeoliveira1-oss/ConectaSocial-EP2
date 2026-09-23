@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os projetos sociais da ConectaSocial e descubra como participar.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>ConectaSocial - Projetos</title>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo-link" aria-label="ConectaSocial - Página inicial">
+            <img src="imagens/logo.png" alt="Logo da ConectaSocial">
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+            <ul>
+
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="projetos.html" aria-haspopup="true">
+                        Projetos ▼
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#educacao">Educação para Todos</a>
+                        </li>
+                        <li>
+                            <a href="#alimento">Alimento Solidário</a>
+                        </li>
+                        <li>
+                            <a href="#inclusao">Inclusão e Oportunidades</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- INTRODUÇÃO -->
+    <section class="projects-hero" aria-labelledby="titulo-projetos">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">Nossas iniciativas</span>
+
+                <h1 id="titulo-projetos">
+                    Projetos que transformam
+                </h1>
+
+                <p>
+                    A ConectaSocial desenvolve e apoia iniciativas voltadas
+                    à inclusão social, educação e melhoria da qualidade de vida.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJETOS -->
+    <section class="projects-section" aria-labelledby="titulo-iniciativas">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">Conheça nossas ações</span>
+
+                <h2 id="titulo-iniciativas">
+                    Nossos Projetos Sociais
+                </h2>
+
+                <p>
+                    Conheça algumas das iniciativas que recebem o apoio
+                    da ConectaSocial.
+                </p>
+            </div>
+
+
+            <div class="projects-grid">
+
+                <!-- PROJETO 1 -->
+                <article class="project-card" id="educacao">
+
+                    <div class="project-card-header">
+                        <span class="badge badge-blue">
+                            Educação
+                        </span>
+
+                        <div class="project-icon project-icon-blue"
+                             aria-hidden="true">
+                            ◆
+                        </div>
+                    </div>
+
+                    <div class="project-card-content">
+
+                        <h3>
+                            Educação para Todos
+                        </h3>
+
+                        <p>
+                            Projeto voltado ao apoio educacional de crianças
+                            e adolescentes em situação de vulnerabilidade
+                            social, oferecendo atividades de reforço escolar,
+                            leitura e desenvolvimento pessoal.
+                        </p>
+
+                    </div>
+
+                    <div class="project-card-footer">
+
+                        <button
+                            class="button button-secondary project-modal-button"
+                            type="button"
+                            data-project="educacao">
+                            Saiba mais
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 2 -->
+                <article class="project-card" id="alimento">
+
+                    <div class="project-card-header">
+
+                        <span class="badge badge-orange">
+                            Alimentação
+                        </span>
+
+                        <div class="project-icon project-icon-orange"
+                             aria-hidden="true">
+                            ◆
+                        </div>
+
+                    </div>
+
+                    <div class="project-card-content">
+
+                        <h3>
+                            Alimento Solidário
+                        </h3>
+
+                        <p>
+                            Campanha destinada à arrecadação e distribuição
+                            de alimentos para famílias que enfrentam
+                            dificuldades financeiras e insegurança alimentar.
+                        </p>
+
+                    </div>
+
+                    <div class="project-card-footer">
+
+                        <button
+                            class="button button-secondary project-modal-button"
+                            type="button"
+                            data-project="alimento">
+                            Saiba mais
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 3 -->
+                <article class="project-card" id="inclusao">
+
+                    <div class="project-card-header">
+
+                        <span class="badge badge-purple">
+                            Inclusão
+                        </span>
+
+                        <div class="project-icon project-icon-purple"
+                             aria-hidden="true">
+                            ◆
+                        </div>
+
+                    </div>
+
+                    <div class="project-card-content">
+
+                        <h3>
+                            Inclusão e Oportunidades
+                        </h3>
+
+                        <p>
+                            Iniciativa que busca promover inclusão social
+                            e ampliar oportunidades por meio de oficinas,
+                            capacitação e orientação para pessoas em
+                            situação de vulnerabilidade.
+                        </p>
+
+                    </div>
+
+                    <div class="project-card-footer">
+
+                        <button
+                            class="button button-secondary project-modal-button"
+                            type="button"
+                            data-project="inclusao">
+                            Saiba mais
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOAÇÕES -->
+    <section class="donation-section" aria-labelledby="titulo-doacoes">
+
+        <div class="container donation-grid">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Apoie nossas ações
+                </span>
+
+                <h2 id="titulo-doacoes">
+                    Como sua doação ajuda
+                </h2>
+
+                <p>
+                    As doações contribuem para a manutenção dos projetos,
+                    aquisição de materiais, distribuição de alimentos e
+                    realização das atividades sociais.
+                </p>
+
+            </div>
+
+            <div class="donation-card">
+
+                <span class="badge badge-green">
+                    Impacto social
+                </span>
+
+                <h3>
+                    Toda contribuição importa
+                </h3>
+
+                <p>
+                    Sua contribuição ajuda a ampliar o alcance das ações
+                    desenvolvidas pela ConectaSocial.
+                </p>
+
+                <a href="cadastro.html"
+                   class="button button-primary">
+                    Quero contribuir
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VOLUNTARIADO -->
+    <section class="volunteer-section" aria-labelledby="titulo-voluntariado">
+
+        <div class="container volunteer-grid">
+
+            <div>
+                <span class="section-label">
+                    Faça parte
+                </span>
+
+                <h2 id="titulo-voluntariado">
+                    Seja um voluntário
+                </h2>
+
+                <p>
+                    Pessoas interessadas podem contribuir com seu tempo,
+                    conhecimentos e habilidades em diferentes atividades
+                    desenvolvidas pelos projetos sociais.
+                </p>
+            </div>
+
+            <div class="volunteer-action">
+
+                <a href="cadastro.html"
+                   class="button button-primary">
+                    Quero ser voluntário
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MODAL -->
+    <dialog class="project-modal" id="project-modal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                type="button"
+                aria-label="Fechar janela">
+                ✕
+            </button>
+
+            <span class="badge badge-blue" id="modal-badge">
+                Projeto social
+            </span>
+
+            <h2 id="modal-title">
+                Projeto
+            </h2>
+
+            <p id="modal-description">
+                Informações sobre o projeto.
+            </p>
+
+            <a href="cadastro.html"
+               class="button button-primary">
+                Quero participar
+            </a>
+
+        </div>
+
+    </dialog>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-content">
+
+        <div>
+            <strong>ConectaSocial</strong>
+
+            <p>
+                Conectar • Colaborar • Transformar
+            </p>
+        </div>
+
+        <div>
+            <p>
+                &copy; 2026 ConectaSocial.
+                Todos os direitos reservados.
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
