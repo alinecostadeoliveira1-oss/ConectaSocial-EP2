@@ -249,7 +249,7 @@ header {
 
 .dropdown-menu {
     position: absolute;
-    top: calc(100% + var(--espaco-2));
+    top: 100%;
     left: 0;
 
     min-width: 260px;
