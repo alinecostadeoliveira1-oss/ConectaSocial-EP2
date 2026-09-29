@@ -1,16 +1,41 @@
 # ConectaSocial
 
-## 📌 Sobre o projeto
+## Sobre o projeto
 
-O ConectaSocial é uma plataforma web desenvolvida para promover o engajamento e a participação em projetos sociais.
+O ConectaSocial é uma plataforma web desenvolvida para apresentar projetos sociais e facilitar a participação de pessoas interessadas em ações de voluntariado e apoio social.
 
-O projeto foi desenvolvido como parte da Experiência Prática 2 da graduação em Sistemas de Informação, com foco na aplicação prática de conceitos de desenvolvimento Front-end, responsividade, organização visual e interação com o usuário.
+O projeto foi desenvolvido como parte das atividades práticas da graduação em Sistemas de Informação, evoluindo de uma interface estática para uma aplicação web dinâmica, responsiva e com recursos de interação.
 
-## 🎯 Objetivo
+A aplicação utiliza uma arquitetura baseada em JavaScript modular, permitindo navegação sem recarregamento completo da página, utilização de templates dinâmicos, validação de formulário e armazenamento local de dados.
 
-Criar uma interface web acessível, responsiva e funcional para apresentar projetos sociais e facilitar o cadastro de pessoas interessadas em participar.
+## Objetivo
 
-## 🚀 Tecnologias utilizadas
+O objetivo do projeto é desenvolver uma plataforma web acessível e responsiva que conecte pessoas a iniciativas sociais.
+
+A aplicação permite conhecer os projetos disponíveis, visualizar informações detalhadas sobre cada iniciativa e realizar um cadastro para demonstrar interesse em participar.
+
+## Funcionalidades
+
+- Navegação entre páginas utilizando uma SPA.
+- Navegação pelo histórico do navegador com History API.
+- Renderização dinâmica de conteúdo por meio de templates JavaScript.
+- Apresentação de projetos sociais.
+- Visualização de detalhes dos projetos em modais.
+- Menu responsivo para dispositivos móveis.
+- Formulário de cadastro.
+- Validação dos campos do formulário.
+- Persistência dos dados utilizando `localStorage`.
+- Recuperação dos dados armazenados após o carregamento da aplicação.
+- Tratamento de dados inválidos armazenados no `localStorage`.
+- Feedback visual utilizando SweetAlert2.
+- Interface responsiva.
+- Recursos de acessibilidade.
+- Validação do código JavaScript utilizando ESLint.
+- Publicação automática no GitHub Pages por meio do GitHub Actions.
+
+## Tecnologias utilizadas
+
+### Front-end
 
 - HTML5
 - CSS3
@@ -18,37 +43,54 @@ Criar uma interface web acessível, responsiva e funcional para apresentar proje
 - Flexbox
 - CSS Grid
 - Media Queries
+- Web Storage API (`localStorage`)
+- History API
+- HTML `<dialog>`
+
+### Ferramentas
+
+- Git
+- GitHub
+- GitHub Actions
+- GitHub Pages
+- Visual Studio Code
 - ESLint
-- Git e GitHub
+- npm
 
-## ✨ Funcionalidades
+### Biblioteca externa
 
-- Interface responsiva para desktop e dispositivos móveis
-- Menu de navegação responsivo
-- Dropdown de projetos
-- Modais para apresentação dos projetos
-- Formulário de cadastro
-- Validação de campos
-- Máscaras para CPF, telefone e CEP
-- Feedback visual após o cadastro
-- Organização do projeto em arquivos e diretórios
-- Validação do HTML e CSS
-- Verificação do JavaScript com ESLint
+- SweetAlert2
 
-## 📂 Estrutura do projeto
+A biblioteca SweetAlert2 é utilizada para apresentar mensagens de feedback ao usuário após ações realizadas no formulário.
+
+## Estrutura do projeto
 
 ```text
 ConectaSocial_EP2/
-├── index.html
-├── projetos.html
-├── cadastro.html
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── html/
+│   └── index.html
 ├── css/
 │   └── style.css
 ├── imagens/
 │   └── logo.png
 ├── js/
-│   └── script.js
-├── .gitignore
+│   ├── app.js
+│   ├── form.js
+│   ├── menu.js
+│   ├── projects.js
+│   ├── router.js
+│   ├── script.js
+│   ├── storage.js
+│   ├── templates.js
+│   └── ui.js
+├── cadastro.html
+├── index.html
+├── projetos.html
 ├── eslint.config.mjs
 ├── package.json
-└── package-lock.json
+├── package-lock.json
+├── .gitignore
+└── README.md
