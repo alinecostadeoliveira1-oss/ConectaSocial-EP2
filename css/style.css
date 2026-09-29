@@ -1677,4 +1677,13 @@ header {
     z-index: 1001;
     pointer-events: auto;
 }
+/* Acessibilidade: foco visível para navegação por teclado */
+:focus-visible {
+    outline: 3px solid var(--cor-laranja);
+    outline-offset: 3px;
+}
+.button:focus-visible {
+    outline: 3px solid var(--cor-laranja);
+    outline-offset: 3px;
+}
 
