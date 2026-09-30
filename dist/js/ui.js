@@ -1,0 +1,1 @@
+import t from"https://cdn.jsdelivr.net/npm/sweetalert2@11/+esm";export function showSuccess(e){t.fire({icon:"success",title:"Cadastro realizado!",text:e,confirmButtonText:"OK"})}export function showError(e){t.fire({icon:"error",title:"Atenção",text:e,confirmButtonText:"OK"})}
